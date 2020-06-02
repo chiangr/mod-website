@@ -9,8 +9,12 @@
 	font-family: 'Questrial', sans-serif;
 }
 
-html{
+body{
+	transform-style:preserve-3d;
+	height:100%;
 	overflow-x:hidden;
+	overflow-y:scroll;
+	perspective:1px;
 }
 
 /*
@@ -179,6 +183,68 @@ button.main-content:hover{
 }
 #display-food{
 	position:absolute;
+}
+
+
+.bottom-directors{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:100%;
+}
+
+.bottom-directors-button{
+	font-size:1em;
+	align-items: center;
+	border:none;
+	background-color:transparent;
+	height:3em;
+	width: 9em;
+	transition: 0.3s;
+}
+
+.bottom-directors-button:hover{
+	border-bottom: 5px solid #f7931d;
+}
+
+
+footer{
+	height:15em;
+	background-color:#566357;
+	padding-top:8em;
+	padding-left:3em;
+	padding-right:3em;
+	color:white;
+}
+
+#footer-left{
+	float:left;
+}
+
+#footer-right{
+	float:right;
+}
+
+
+
+
+#about{
+	border-top: 5px solid #ffd98e;
+}
+
+#logo-director{
+	display: flex;
+	justify-content:center;
+
+	background-image: url("img/backdrop5.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment:fixed;
+}
+
+#logo{
+
 }
 
 @media (max-width:700px){
