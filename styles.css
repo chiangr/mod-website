@@ -1,285 +1,330 @@
+/*
 
+Copyright 
+
+Rychi Co. 2021
+
+NO COPYING OR U DIE
+
+*/
 
 * {
-	margin: 0;
-	padding: 0;
-	scroll-behavior:smooth;
-	overflow-x:hidden;
-
-	font-family: 'Questrial', sans-serif;
+  font-family: 'Syne Mono', monospace;
 }
 
-body{
-	transform-style:preserve-3d;
-	height:100%;
-	overflow-x:hidden;
-	overflow-y:scroll;
-	perspective:1px;
+body {
+  margin:0;
+  height: 100em;
+  overflow-x:hidden;
+}
+
+.header-logo {
+  display:flex;
+  justify-content: center;
+}
+
+#logo {
+  width:100px;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width:100%;
+  background-color: #685642;
+}
+
+.header-content{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.dropbtn {
+  background-color: #685642;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor:pointer;
+  width:150px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #B3A580;
+  transition: 0.2s;
+  color:white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #B3A580;
+  transition: 0.2s;
 }
 
 /*
-@media (max-width:1200px){
-
-	html{
-		overflow-x:scroll;
-		width:1200px;
-	}
-
-}
-
-@media (min-width:700px){
-
-	html{
-		overflow-x:hidden;
-	}
-
+.divide {
+  height:1000px;
 }
 */
 
-button{
-	cursor:pointer;
-
+.main {
+  width:100%;
+  height:500px;
+  background-image:url("img/front.jpg");
 }
 
-/* Big Picture */
-#main {
-	position: relative;
-	height: 50em;
-	width: 100%;
-
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	flex-direction: column;
-
-	background-image: url("img/backdrop3.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-	background-attachment:fixed;
+/*
+.map {
+  position:absolute;
+  width:100%;
 }
 
-#big-text{
-	width:50%;
-
-	display:flex;
-  	align-items: center;
-	justify-content: space-around;
-	/*flex-direction: row;*/
+iframe.map{
+  width:100%;
 }
 
-h1.main-content{
-	color:white;
+*/
+
+.mySlides {display: none;}
+.slide-content {
+  vertical-align: middle;
+  overflow:hidden;
+  object-fit:cover;
+  height:500px;
+  width:100%;
 }
 
-button.main-content{
-	height:100px;
-	width: 200px;
-
-	border:none;
-	background-color: #f7931d;
-
-	opacity: 0.5;
-	font-size:2em;
-
-	color: white;
-
-	transition: 0.3s;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  margin: auto;
 }
 
-button.main-content:hover{
-	background-color:#FFD98E;
-	opacity:0.8;
+/* Caption text */
+/*
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+*/
+
+.motto {
+  width:100%;
+  text-align:center; 
+  border-top: solid 2px black;
+  border-bottom:solid 2px black;
 }
 
-#main-divider{
-	height:6em;
-	width:0.2em;
-	background-color:#f2f2f2;
-	opacity:0.7;
-	border-radius:2em;
+.layer-1 {
 }
 
-
-/* Divider between Big Picture and Directors */
-.divider{
-	position:absolute;
-	width:100%;
-	background-color:#f7931d;
-	height: 3em;
-	opacity:0.6;
-	bottom:0;
+.photo-row{
+  display:flex;
+  justify-content:center;
+  overflow-y:hidden;
 }
 
-
-#covid-update{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	flex-direction: column;
-	padding-left:3em;
-	padding-right:3em;
-	text-align:center;
-	height:5em;
-	background-color:#FFD98E;
+.photo{
+  width:33%;
+  height:auto;
+  overflow:hidden;
+  background-size: cover;
+  margin:2px;
+  padding:50px;
 }
 
-/* Director Buttons */
-.directors{
-	position:sticky;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	width:100%;
-	padding-bottom:7em;
+.photo:before {
+  content: "";
+  float: left;
+  padding-top: 100%;  /* initial ratio of 1:1*/
 }
 
-.directors-button{
-	font-size:1em;
-	align-items: center;
-	border:none;
-	background-color:transparent;
-	height:3em;
-	width: 9em;
-	transition: 0.3s;
+.photo-button{
+  width:100%;
+  height:100%;
+  background-color:rgba(255,255,255,0);
+  transition:0.2s;
+  opacity:0;
+  font-size:1em;
 }
 
-.directors-button:hover{
-	border-top: 5px solid #f7931d;
+.photo-button:hover{
+  opacity:1;
+  background-color:rgba(255,255,255,.4);
 }
 
-
-/* Introduction */
-.intro{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	flex-direction: column;
-
-	width:100%;
-	height:30em;
-	overflow-y:hidden;
+#photo-1{
+  background-image:url("img/drink1.png");
 }
 
-.intro-backdrop{
-	background-color: #f7931d;
-	width:100%;
-	height:10em;
+#photo-2{
+  background-image:url("img/drink2.png");
 }
 
-.intro-2{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	flex-direction: column;
-
-	width:100%;
-	height:30em;
-	overflow-y:hidden;
+#photo-3{
+  background-image:url("img/drink3.png");
 }
 
-#display-drink{
-	position:absolute;
+#photo-4{
+  background-image:url("img/drink4.png");
 }
-#display-food{
-	position:absolute;
+
+#photo-5{
+  background-image:url("img/drink5.png");
+}
+
+.goal {
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+}
+
+.description {
+  margin-right:100px;
+  margin-left:100px;
+  width:300px;
 }
 
 
-.bottom-directors{
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	width:100%;
+.footer{
+  height:100px;
+  padding:30px;
 }
 
-.bottom-directors-button{
-	font-size:1em;
-	align-items: center;
-	border:none;
-	background-color:transparent;
-	height:3em;
-	width: 9em;
-	transition: 0.3s;
+.footer-content-l{
+  float:left;
 }
 
-.bottom-directors-button:hover{
-	border-bottom: 5px solid #f7931d;
+.footer-content-r{
+  float:right;
+}
+
+/* The dots/bullets/indicators */
+/*
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+*/
+
+/* Fading animation */
+/*
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+*/
+
+
+.drink-row {
+  display:flex;
+  justify-content: center;
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align:center;
+}
+
+.drink-itm {
+  margin-right:25px;
+  margin-left:25px;
+  width:300px;
+}
+
+.drink-itm-pic{
+  width:300px;
+  height:300px;
+}
+
+.walnut-lctn{
+  display:flex;
+  justify-content:center;
+  padding-top:25px;
+}
+
+.walnut-lctn-desc{
+  margin-left:10px;
+  line-height: 0.7;
 }
 
 
-footer{
-	height:15em;
-	background-color:#566357;
-	padding-top:8em;
-	padding-left:3em;
-	padding-right:3em;
-	color:white;
-}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+  .text {font-size: 11px}
+  h1{font-size:20px;}
+  h2{font-size: 14px;}
+  p{font-size:7px;}
+  .photo{
+    padding:10px;
+  }
+  .header{
+    display:none;
+  }
+  .slide-content, .main{
+    height:200px;
+  }
 
-#footer-left{
-	float:left;
-}
-
-#footer-right{
-	float:right;
-}
-
-
-
-
-#about{
-	border-top: 5px solid #ffd98e;
-}
-
-#logo-director{
-	display: flex;
-	justify-content:center;
-
-	background-image: url("img/backdrop5.jfif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-	background-attachment:fixed;
-}
-
-#logo{
-
-}
-
-@media (max-width:700px){
-
-	#main {
-		height: 25em;
-	}
-
-	img.main-content{
-		max-width:400px;
-	}
-
-
-	.directors{
-		padding-bottom:0;
-	}
-
-	.intro{
-		height:15em;
-	}
-
-	.intro-2{
-		height:15em;
-	}
-
-	.intro-backdrop{
-		height:5em;
-	}
-
-	#display-drink{
-		max-width:450px;
-	}
-
-	#display-food{
-		max-width:450px;
-	}
-
+  .goal {
+    margin-top:50px;
+  }
+  .desc-txt{
+    font-size:10px;
+  }
+  .goal-img{
+    display:none;
+  }
+  .footer{
+    height:30px;
+    padding:30px;
+  }
 }
