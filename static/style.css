@@ -1,0 +1,263 @@
+* {
+    font-family: "satoshiblack";    
+}
+
+body {
+    background-color:black;
+    scroll-behavior: smooth;
+    overflow-y:auto;
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    font-family: 'satoshilight';
+}
+
+.navbar-ctn {
+    position: sticky;
+    left:0;
+    top:0;
+}
+
+.navbar {
+    height:100px;
+}
+
+.navbar a {
+    font-style:none;
+    color:whitesmoke;
+    font-size:20px;
+}
+
+.navbar button {
+    color:black;
+    border:black solid 2px;
+}
+
+.navbar button:hover {
+    background-color:#363020;
+    transition:0.4s;
+    color:whitesmoke;
+}
+
+.active {
+    color:black;
+    background-color:black;
+}
+
+.navbg-dark {
+    background-color:rgba(0, 0, 0, 0.7);
+    transition:0.2s;
+}
+
+.navbg-transparent {
+    background-color:none;
+    opacity:100%;
+    transition:0.2s;
+}
+
+@keyframes btn-grad {
+    0% {
+        color:white;
+    }
+
+    50% {
+        color:rgb(142, 196, 255);
+    }
+
+    100% {
+        color:white;
+    }
+}
+
+.navbar h1 {
+    color:whitesmoke;
+}
+
+/* Hero */
+
+.ctn-txt h1 {
+    font-size: 5em;
+    color:white;
+}
+
+.ctn-txt h2 {
+    color:whitesmoke;
+    /*
+    -webkit-animation: btn-grad 4s infinite;
+    animation: btn-grad 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    */
+}
+
+.ctn-txt p {
+    color:rgb(234, 234, 234);
+}
+
+.hero-ctn {
+    scroll-snap-align:end;
+    height:100vh;
+    /* background-image:url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1"); */
+}
+
+#hero-ctn-1 {
+    background-image: url("images/herobg7.jpg");
+    background-size:cover;
+}
+
+#hero-ctn-3 {
+    /*
+    background-image:url("images/herobg6.jpg");
+    background-size:cover;
+    background-position:50% 50% 
+    */
+}
+
+#hero-ctn-4 {
+    background-image:url("images/herobg8.jpg");
+    background-size:cover;
+}
+
+/* Not used currently */
+
+#hero-ctn-2 {
+    background-image:url("images/herobg2.jpg");
+    background-size:cover;
+}
+
+.hero-row {
+    padding-top:25vh;
+    padding-bottom:100px;
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items:center;
+}
+
+.hero-txt {
+    align-self:center;
+}
+
+.hero-txt button {
+    color:whitesmoke;
+    background-color:transparent;
+    border:whitesmoke solid 2px;
+    width:300px;
+    border-radius:20px;
+}
+
+.hero-txt button:hover {
+    background-color:white;
+    color:black;
+
+    transition:0.4s;
+    
+}
+
+#hero-bg-1 {
+    background-color:whitesmoke;
+    position:absolute;
+    z-index:-1;
+    height:600px;
+    width:600px;
+    border-radius:50%;
+}
+
+#hero-bg-2 {
+    background-color:rgb(23, 64, 108);
+    position:absolute;
+    z-index:-2;
+    height:600px;
+    width:600px;
+    border-radius:50%;
+    top:600px;
+}
+
+#hero-bg-3 {
+    background-color:rgb(40, 141, 249);
+    position:absolute;
+    z-index:-3;
+    height:600px;
+    width:600px;
+    border-radius:50%;
+    top:-600px;
+}
+
+.desc-txt {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    height:100vh;
+}
+
+.ctn-txt-dark {
+    color:black;
+}
+
+#desc-bg-circle {
+    background-color:rgb(243, 218, 180);
+    position:absolute;
+    z-index:-1;
+    height:400px;
+    width:400px;
+    border-radius:50%;
+}
+
+/* Content
+
+.content-row {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.content-ctn {
+    background-color:whitesmoke;
+    scroll-snap-align:start;
+}
+
+.content-img {
+    justify-content: center;
+}
+
+.content-txt {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.content-ctn button {
+    color:black;
+    border:black solid 2px;
+    width:40%;
+    max-width:200px;
+}
+
+.content-ctn button:hover {
+    background-color:#363020;
+    transition:0.4s;
+    color:whitesmoke;
+}
+
+#content-bg-1 {
+    background-color:rgb(40, 141, 249);
+    position:absolute;
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    top:0;
+}
+
+#content-row-2 {
+    background-color:white;
+}
+
+*/
