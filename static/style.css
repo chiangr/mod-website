@@ -6,11 +6,11 @@ body {
     background-color:black;
     overflow-x:hidden;
     scroll-behavior: smooth;
-    overflow-y:auto;
+    overflow-y:scroll;
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    margin-top:-100px;
+    margin-top:-105px;
 }
 
 body::-webkit-scrollbar {
@@ -43,7 +43,7 @@ p {
 
 #scrollbar {
     width:0;
-    background-color:white;
+    background-color:whitesmoke;
     height:5px;
 }
 
@@ -171,46 +171,46 @@ p {
     --speed: 1.5s;
 }
 
-  .g-container {
-    width: 100%;
-    height: calc(var(--h) * 1px);
-    overflow:hidden;
-    margin-bottom:80px;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    animation: move calc(var(--speed) * var(--s)) steps(var(--s)) infinite;
-    list-style:none;
-    margin-left:-40px;
-  }
-  ul li {
-    width: 100%;
-    animation: liMove calc(var(--speed)) infinite;
-    color:white;
-    font-size:47px;
-  }
-  @keyframes move {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(0, calc(var(--s) * var(--h) * -1px));
-    }
-  }
-  @keyframes liMove {
-    0% {
-      transform: translate(0, 0);
-    }
-    80%,
-    100%  {
-      transform: translate(0, calc(var(--h) * -1px));
-    }
+.g-container {
+width: 100%;
+height: calc(var(--h) * 1px);
+overflow:hidden;
+margin-bottom:80px;
+}
+.g-container ul {
+display: flex;
+flex-direction: column;
+animation: move calc(var(--speed) * var(--s)) steps(var(--s)) infinite;
+list-style:none;
+margin-left:-40px;
+}
+.g-container ul li {
+width: 100%;
+animation: liMove calc(var(--speed)) infinite;
+color:white;
+font-size:47px;
+}
+@keyframes move {
+0% {
+    transform: translate(0, 0);
+}
+100% {
+    transform: translate(0, calc(var(--s) * var(--h) * -1px));
+}
+}
+@keyframes liMove {
+0% {
+    transform: translate(0, 0);
+}
+80%,
+100%  {
+    transform: translate(0, calc(var(--h) * -1px));
+}
 
 }
 
-.hero-hook .hidden {
-    transform:translateY(200px);
+.hero-hook.visible {
+    transition-delay:0.1s;
 }
 
 .hero-txt button {
@@ -229,6 +229,7 @@ p {
     
 }
 
+/*
 #hero-bg-1 {
     background-color:whitesmoke;
     position:absolute;
@@ -257,6 +258,7 @@ p {
     border-radius:50%;
     top:-600px;
 }
+*/
 
 .desc-txt {
     display:flex;
@@ -290,10 +292,10 @@ p {
 
 @keyframes load {
     0% {
-      transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
     }
     100% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 
@@ -313,6 +315,7 @@ p {
     color:whitesmoke;
 }
 
+/*
 #desc-bg-circle {
     background-color:rgb(243, 218, 180);
     position:absolute;
@@ -321,6 +324,7 @@ p {
     width:400px;
     border-radius:50%;
 }
+*/
 
 .team-row-title {
     text-align:center;
@@ -346,53 +350,3 @@ p {
 .team-row-2 .visible {
     transition-delay:0.2s;
 }
-
-/* Content
-
-.content-row {
-    padding-top:50px;
-    padding-bottom:50px;
-}
-
-.content-ctn {
-    background-color:whitesmoke;
-    scroll-snap-align:start;
-}
-
-.content-img {
-    justify-content: center;
-}
-
-.content-txt {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-.content-ctn button {
-    color:black;
-    border:black solid 2px;
-    width:40%;
-    max-width:200px;
-}
-
-.content-ctn button:hover {
-    background-color:#363020;
-    transition:0.4s;
-    color:whitesmoke;
-}
-
-#content-bg-1 {
-    background-color:rgb(40, 141, 249);
-    position:absolute;
-    height:200px;
-    width:200px;
-    border-radius:50%;
-    top:0;
-}
-
-#content-row-2 {
-    background-color:white;
-}
-
-*/
