@@ -1,4 +1,10 @@
-var herotxt =  ["maximize the efficiency of finding furniture for college students?","reach our target audience of college students? ","source the materials and manufacturing resources to produce products that are sustainable for the business?","create efficient ways to reuse and recycle furniture?"]
+var herotxt =  [
+"maximize the efficiency of finding furniture for college students?",
+"reach our target audience of college students? ",
+"source the materials and manufacturing resources to produce products that are sustainable for the business?",
+"create efficient ways to reuse and recycle furniture?",
+"maximize functionality and provide price-friendly value in furniture catered towards college students?"
+]
 
 textSequence(0);
 function textSequence(i) {

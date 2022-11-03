@@ -13,6 +13,7 @@ $(document).ready(function () {
         teamTxtFlyIn();
         heroTxtFlyIn();
         scrollbar();
+        parallax();
     });
 
     function changeNavbar() {
@@ -44,6 +45,19 @@ $(document).ready(function () {
         } else if ($(this).scrollTop() < viewHeight-((viewHeight*2)/3)) {
             navbar.removeClass("hidden").addClass("visible");
         }
+    }
+
+    function parallax() {
+        var viewHeight = window.innerHeight;
+        var descImgCtn = 2;
+        if ($(this).scrollTop() <= viewHeight*2) {
+            var heroScroll = $(this).scrollTop()*0.4 + "px"
+            document.getElementById("hero-ctn-1").style.backgroundPositionY = heroScroll;
+        }
+        /*
+        var descImgScroll = toString(((viewHeight*descImgCtn)-$(this).scrollTop())) + "px"
+        document.getElementById("desc-img-1").style.transform = "translateY(%s)",descImgScroll;
+        */
     }
 
     function scrollbar() {

@@ -3,10 +3,9 @@
 }
 
 body {
-    background-color:black;
+    background-color:rgb(30, 30, 30);
     overflow-x:hidden;
     scroll-behavior: smooth;
-    overflow-y:scroll;
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -100,6 +99,17 @@ p {
 
 /* Hero */
 
+.horizontal-scroll {
+    overflow-x:auto;
+    white-space: nowrap;
+}
+
+.stats-ctn {
+    width:100vw;
+    display:inline-block;
+    float:none;
+}
+
 .ctn-txt h1 {
     font-size: 5em;
     color:white;
@@ -133,9 +143,10 @@ p {
 #hero-ctn-2 {
     background-image:url("images/herobg10.jpg");
     background-size:cover;
-    background-position:50% 50% 
+    background-position:50% 50%;
 }
 
+/*
 #hero-ctn-3 {
     background-image:url("images/herobg9.jpg");
     background-size:cover;
@@ -150,6 +161,7 @@ p {
     background-image:url("images/herobg3.jpg");
     background-size:cover;
 }
+*/
 
 .hero-row {
     padding-top:25vh;
@@ -326,10 +338,16 @@ font-size:47px;
 }
 */
 
+.team-ctn {
+    background-color: #a76042;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
 .team-row-title {
     text-align:center;
     color:whitesmoke;
-    padding-top:100px;
+    padding-bottom:50px;
 }
 
 .team-row {
@@ -338,15 +356,67 @@ font-size:47px;
 }
 
 .team-row img{
-    width:150px;
-    border-radius:75px;
+    width:100px;
+    border-radius:50px;
     margin-bottom:20px;
 }
 
 .team-row h3 {
     color:whitesmoke;
+    font-size:medium;
+}
+
+.team-row p {
+    font-size:small;
 }
 
 .team-row-2 .visible {
     transition-delay:0.2s;
+}
+
+.footer-48201 {
+    padding: 7rem 0;
+    background-color: #000;
+    color: #777; 
+}
+
+.footer-48201 .footer-site-logo {
+    font-size: 1.5rem;
+    color: #fff; 
+}
+
+.footer-48201 .nav-links li {
+    margin-bottom: 10px; 
+}
+
+.footer-48201 .nav-links li a {
+    color: gray; 
+}
+.footer-48201 .nav-links li a:hover {
+    color: #fff; 
+}
+
+.footer-48201 .btn.btn-tertiary {
+    background-color: #a76042;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px; 
+}
+
+.footer-48201 .social li {
+    display: inline-block; 
+}
+
+.footer-48201 .social li a {
+    color: gray;
+    padding: 7px; 
+}
+
+.footer-48201 .social li a:hover {
+    color: #fff; 
+}
+
+.footer-48201 .copyright {
+    border-top: 1px solid #404040; 
 }
