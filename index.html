@@ -18,12 +18,12 @@
     </head>
     <body data-bs-spy="scroll" data-bs-target="#navbar" class="scroller">
         <nav class="container-fluid no-gutters sticky-top navbar-ctn sticky">
-            <div class="row navbar-detect">
+            <div class="row navbar-detect d-none">
                 <div class="navbar-detect" id="scrollbar"></div>
             </div>
             <div class="row navbar navbar-detect">
                 <div class="col-md-1">
-                    <h1>MOD</h1>
+                    <a href="index.html" id="logo"><h1>MOD</h1></a>
                 </div>
                 <div class="col-md-8"></div>
                 <div class="col-md-1">
@@ -31,10 +31,7 @@
                 <div class="col-md-1">
                 </div>
                 <div class="col-md-1">
-                    <a href="#hero-ctn-1">.</a>
-                    <a href="#hero-ctn-3">.</a>
-                    <a href="#hero-ctn-4">.</a>
-                    <a href="#hero-ctn-5">.</a>
+                    <a href="team.html">Team</a>
                 </div>
             </div>
         </nav>
@@ -74,7 +71,7 @@
                 <div class="col-lg-4 ctn-txt desc-txt desc-txt-dark">
                     <h1>How Might We ...</h1>
                     <br>
-                    <h2 id="sequence" style="height:20vh">create efficient ways to reuse and recycle furniture?</h2>
+                    <h4 id="sequence" style="height:20vh">create efficient ways to reuse and recycle furniture?</h4>
                     <br>
                     <br>
                     <div id="loader"><div id="loader-bar"></div></div>
@@ -88,9 +85,10 @@
                 -->
             </div>
         </div>
-        <div>
-            <div class="container-fluid hero-ctn stats-ctn d-flex align-items-center" id="hero-ctn-3">
-                <div class="mx-auto my-auto col-lg-8 ctn-txt ctn-txt-dark desc-txt prob-txt-center">
+        <!--
+        <div class="problem-scroller" id="problem">
+            <div class="container-fluid problem-ctn d-flex align-items-center justify-content-center" id="hero-ctn-3">
+                <div class="col-lg-4 ctn-txt desc-txt prob-txt-center">
                     <h2>Rising Student Debt</h2>
                     <br>
                     <p>Families have spent a combined total of $5.9 billion on college dorms and apartments.</p>
@@ -98,14 +96,6 @@
                     <a href="https://www.usnews.com/education/best-colleges/articles/2017-08-31/study-students-spent-59b-furnishing-their-college-dorms">Source</a>
                     <a href="https://www.usnews.com/education/best-colleges/paying-for-college/articles/see-how-student-loan-borrowing-has-changed#:~:text=Though%202021%20college%20graduates%20who,according%20to%20U.S.%20News%20data.">Source</a>
                 </div>
-                <!--
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="d-none d-lg-block col-lg-4">
-                        <img src="static/images/example.png" style="width:400px" id="desc-img-1">
-                    </div>
-                </div>
-                -->
             </div>
             <div class="container-fluid hero-ctn d-flex align-items-center justify-content-center" id="hero-ctn-4">
                 <div class="row desc-row">
@@ -125,6 +115,82 @@
                         <p>It is to projected that mobility of housing will spike after quarantine, moving to new areas due to income loss and loss of jobs.</p>
                         <a href="https://www.jchs.harvard.edu/blog/who-is-moving-and-why-seven-questions-about-residential-mobility">Source</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="container" id="hero-ctn-3">
+            <div class="row">
+                <div class="mx-auto my-auto" style="color:whitesmoke;padding-top:50px;">
+                    <h1>Problem</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ctn-txt-dark desc-txt prob-txt-center">
+                    <h2>Rising Student Debt</h2>
+                    <br>
+                    <p>Families have spent a combined total of $5.9 billion on college dorms and apartments.</p>
+                    <p>With student loans at a peak of $30,000 on average per student, many spill out of their pockets in order to pay for neccessities.</p>
+                    <a href="https://www.usnews.com/education/best-colleges/articles/2017-08-31/study-students-spent-59b-furnishing-their-college-dorms">Source</a>
+                    <a href="https://www.usnews.com/education/best-colleges/paying-for-college/articles/see-how-student-loan-borrowing-has-changed#:~:text=Though%202021%20college%20graduates%20who,according%20to%20U.S.%20News%20data.">Source</a>
+                </div>
+                <div class="col-lg-4 ctn-txt-dark desc-txt prob-txt-center">
+                    <h2>Expensive College Furniture</h2>
+                    <br>
+                    <p>From 2020 to 2022, the total planned college expenditure on college dorm and college furnishings rose from $6.7 billion in 2019 to $10.5 billion as of 2022 (Statista).</p>
+                    <a href="https://www.statista.com/statistics/319677/us-consumer-expenditure-on-back-to-college-dorm-or-apartment-furnishings/">Source</a>
+                </div>
+                <div class="col-lg-4 ctn-txt-dark desc-txt prob-txt-center">
+                    <h2>Impact of COVID-19</h2>
+                    <br>
+                    <p>It is to projected that mobility of housing will spike after quarantine, moving to new areas due to income loss and loss of jobs.</p>
+                    <a href="https://www.jchs.harvard.edu/blog/who-is-moving-and-why-seven-questions-about-residential-mobility">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="hero-ctn-3">
+            <div class="row">
+                <div class="mx-auto my-auto" style="color:whitesmoke;padding-top:50px;">
+                    <h1>Solution</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 ctn-txt-dark desc-txt prob-txt-center">
+                    <h2>Modular, Simple Furniture</h2>
+                    <br>
+                    <p>
+                        We have all been through the pains of moving into a new home or apartment. Many college students endure this on a yearly basis, needing to sort out their keepsakes and constantly stay on the move. What if there was a more convenient way for people to easily and conveniently move from one place to another?
+                        <br>
+                        We are attempting to solve this problem by creating a singular, modular piece of furniture that can be configured into the essential furniture pieces and easily disassembled. Inspired by Lego and building blocks, we have simplified furniture pieces down to be able to be functional as different pieces of furniture when built in certain ways. We hope to get this to retail stores around the nation through our technical, design, and managerial skills.
+                    </p>
+                </div>
+                <div class="col-lg-6 ctn-txt-dark desc-txt">
+                    <img src="static/images/prototype/bunkdesk.png" style="width:500px;"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 ctn-txt-dark desc-txt">
+                    <img src="static/images/prototype/top.png" style="width:200px;"/>
+                    <img src="static/images/prototype/leg.png" style="width:200px;"/>
+                    <img src="static/images/prototype/screw-top.png" style="width:200px;"/>
+                </div>
+                <div class="col-lg-6 ctn-txt-dark desc-txt prob-txt-center">
+                    <h2>Many Configurations, 3 Parts</h2>
+                    <br>
+                    <p>
+                        Create the dream furniture piece with just 3 of our parts. Using a top, screw, and leg, you have unlimited choices to create a furniture piece in parts you can easily assemble and disassemble at need.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 ctn-txt-dark desc-txt">
+                    <h2>Desk Configuration</h2>
+                    <img src="static/images/prototype/desk.png" style="width:400px;"/>
+                </div>
+                <div class="col-lg-6 ctn-txt-dark desc-txt">
+                    <h2>Bed Configuration</h2>
+                    <img src="static/images/prototype/twinxl.png" style="width:400px;"/>
                 </div>
             </div>
         </div>
@@ -155,46 +221,46 @@
             <div class="container" id="hero-ctn-6">
                 <div class="row team-row-title">
                     <div class="mx-auto my-auto col-8">
-                        <h1>Our Team</h1>
+                        <a href="team.html" style="text-decoration:none; color:whitesmoke;"><h1>Our Team</h1></a>
                     </div>
                 </div>
                 <div class="row team-row d-flex justify-content-center team-row-1">
-                    <div class="col-lg-2 ctn-txt team-item">
+                    <div class="col-md-2 ctn-txt team-item">
                         <img src="static/images/ryan.jpg">
                         <h3>Ryan Chiang</h3>
                         <br>
                         <p>Mechanical Engineering</p>
                         <p>CO 2025</p>
                     </div>
-                    <div class="col-lg-2 ctn-txt team-item">
+                    <div class="col-md-2 ctn-txt team-item">
                         <img src="static/images/amber.png">
                         <h3>Amber Le</h3>
                         <br>
                         <p>Data + Cognitive Science</p>
                         <p>CO 2025</p>
                     </div>
-                    <div class="col-lg-2 ctn-txt team-item">
+                    <div class="col-md-2 ctn-txt team-item">
                         <img src="static/images/chaeyun.png">
                         <h3>Chae Won Yun</h3>
                         <br>
                         <p>Data Science</p>
                         <p>CO 2024</p>
                     </div>
-                    <div class="col-lg-2 ctn-txt team-item">
+                    <div class="col-md-2 ctn-txt team-item">
                         <img src="static/images/kaleen.jpg">
                         <h3>Kaleen Chen</h3>
                         <br>
                         <p>Computer Science</p>
                         <p>CO 2025</p>
                     </div>
-                    <div class="col-lg-2 ctn-txt team-item">
+                    <div class="col-md-2 ctn-txt team-item">
                         <img src="static/images/victoria.jpg">
                         <h3>Victoria Nguyen</h3>
                         <br>
                         <p>Computer Science</p>
                         <p>CO 2025</p>
                     </div>
-                    <div class="col-lg-2 ctn-txt team-item">
+                    <div class="col-md-2 ctn-txt team-item">
                         <img src="static/images/tk.jpg">
                         <h3>Thien-Kim Dang</h3>
                         <br>
@@ -217,8 +283,8 @@
                     <div class="col-md">
                         <ul class="list-unstyled nav-links">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">.</a></li>
-                        <li><a href="#">.</a></li>
+                        <li><a href="#hero-ctn-2">HMW</a></li>
+                        <li><a href="#hero-ctn-3">Problem</a></li>
                         <li><a href="#">.</a></li>
                         <li><a href="#">.</a></li>
                     </ul>
@@ -228,15 +294,15 @@
                         <li><a href="pdf/Team_7_Abstract_Laddering.pdf" target="_blank">Abstract Laddering</a></li>
                         <li><a href="pdf/Team_7_Clustering.pdf" target="_blank">Clustering</a></li>
                         <li><a href="pdf/Team_7_Persona.pdf" target="_blank">Persona</a></li>
-                        <li><a href="#">.</a></li>
+                        <li><a href="pdf/Team_7_Slides.pdf" target="_blank">Presentation Slides</a></li>
                         <li><a href="#">.</a></li>
                     </ul>
                     </div>
                     <div class="col-md">
                     <ul class="list-unstyled nav-links">
-                        <li><a href="#">.</a></li>
-                        <li><a href="#">.</a></li>
-                        <li><a href="#">.</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1K7gsKX3vxo3uCVUPpypi3ZryWZrfTQ38t3J9MQAy4bE/view?usp=sharing" target="_blank">Project Plan</a></li>
+                        <li><a href="pdf/Team_7_BusinessModel.pdf" target="_blank">Business Model</a></li>
+                        <li><a href="pdf/Team_7_Competitor.png" target="_blank">Competitor/Complementors Map</a></li>
                     </ul>
                     </div>
                     <div class="col-md text-md-center">
@@ -256,6 +322,7 @@
                     <div class="col-12 text-center">
                     <div class="copyright mt-5 pt-5">
                         <p><small>&copy; 2022 All Rights Reserved.</small></p>
+                        <p><small>Berkeley, CA</small></p>
                     </div>
                     </div>
                 </div> 
