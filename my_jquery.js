@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     function teamTxtFlyIn() {
         var navbar = $(".team-item");
-        var ctnNum = 6.5;
+        var ctnNum = 7.3;
         var viewHeightTeam = window.innerHeight * ctnNum;
         if ($(this).scrollTop() >= viewHeightTeam*((ctnNum-0.5)/ctnNum)) {
             navbar.addClass("visible").removeClass("hidden");
@@ -56,9 +56,9 @@ $(document).ready(function () {
     function parallax() {
         var viewHeight = window.innerHeight;
         var descImgCtn = 2;
-        var heroScroll = $(this).scrollTop()*0.4 + "px"
-        document.getElementById("hero-ctn-1").style.backgroundPositionY = heroScroll;
+        var heroScroll = $(this).scrollTop()*0.4 + "px";
         if ($(this).scrollTop() <= viewHeight*2) {
+            document.getElementById("hero-ctn-1").style.backgroundPositionY = heroScroll;
         }
         /*
         var xScroll = $("#problem").scrollLeft()*-0.4 + "px"

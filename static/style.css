@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:rgb(30, 30, 30);
+    background-color:#dfc0a9;
     overflow-x:hidden;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -105,6 +105,21 @@ p {
     color:whitesmoke;
 }
 
+.ctn-h1 {
+    background-color: #bc9d83;
+    padding:10px;
+}
+
+.col-lg-6 img,.col-lg-2 img {
+    border:#bc9d83 solid 5px;
+    border-radius:3px;
+}
+
+video {
+    border:#bc9d83 solid 5px;
+    border-radius:3px;
+}
+
 /* Hero */
 
 .problem-scroller {
@@ -130,6 +145,8 @@ p {
 .ctn-txt h1 {
     font-size: 5em;
     color:white;
+    background-color:#bc9d83;
+    padding:10px;
 }
 
 .ctn-txt h2,h4 {
@@ -299,6 +316,9 @@ font-size:47px;
 
 .desc-txt h2{
     color:whitesmoke;
+    background-color:#bc9d83;
+    padding:8px;
+    margin-bottom:20px;
 }
 
 .desc-txt-dark {
@@ -342,7 +362,7 @@ font-size:47px;
 
 .prob-txt-center {
     /* From https://css.glass */
-    background: #a76042;
+    background: #bc9d83;
     height:500px;
     text-align:center;
     font-size:medium;
@@ -372,7 +392,7 @@ font-size:47px;
 */
 
 .team-ctn {
-    background-color: #a76042;
+    background-color: #bc9d83;
     padding-top:100px;
     padding-bottom:100px;
 }
@@ -430,7 +450,7 @@ font-size:47px;
 }
 
 .footer-48201 .btn.btn-tertiary {
-    background-color: #a76042;
+    background-color: #bc9d83;
     color: #fff;
     border-radius: 30px;
     border: none;
